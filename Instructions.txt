@@ -1,6 +1,9 @@
+# Ensure that you've internet connection on your compute node.
+# You could read this guide on setting up internet connection on your compute node: https://github.com/crisnapatel/HPCIITD/tree/main/IITD%20HPC%20Internet
+
 # I downloaded the lammps-22Jul2025 source code.
 # Open a terminal in lammps-22Jul2025/ dir and follow following commands
-
+------------------------------------------------------------------------
 mkdir lmp_openmp_build 
 cd lmp_openmp_build
 module purge
@@ -22,3 +25,4 @@ cmake -C ../cmake/presets/nolib.cmake -C ../cmake/presets/most.cmake \
 -D PKG_GPU=ON \
 -D LAMMPS_MACHINE=omp \
 -D CMAKE_INSTALL_PREFIX=$HOME/opt/lammps-22Jul2025-omp ../cmake
+------------------------------------------------------------------------
