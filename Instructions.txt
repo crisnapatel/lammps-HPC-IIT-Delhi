@@ -1,3 +1,5 @@
+# This file has instructions to install lammps in your HPC account at IIT Delhi.
+------------------------------------------------------------------------
 # Ensure that you've internet connection on your compute node.
 # You could read this guide on setting up internet connection on your compute node: https://github.com/crisnapatel/HPCIITD/tree/main/IITD%20HPC%20Internet
 
