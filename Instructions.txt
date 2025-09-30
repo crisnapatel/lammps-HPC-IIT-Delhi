@@ -25,4 +25,7 @@ cmake -C ../cmake/presets/nolib.cmake -C ../cmake/presets/most.cmake \
 -D PKG_GPU=ON \
 -D LAMMPS_MACHINE=omp \
 -D CMAKE_INSTALL_PREFIX=$HOME/opt/lammps-22Jul2025-omp ../cmake
+
+make -j$(nproc)
+make install
 ------------------------------------------------------------------------
